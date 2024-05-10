@@ -1,0 +1,42 @@
+.footer {
+  background: var(--clr-background-dark);
+  color: var(--clr-grey-t);
+  text-align: center;
+  padding: 5rem 2rem;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+
+  &_icons {
+    display: flex;
+    gap: 1.4rem;
+    font-size: 2rem;
+
+    svg {
+      cursor: pointer;
+      transition: all .2s ease-in;
+      
+      &:hover {
+        color: var(--clr-main);
+      }
+    }
+  }
+
+  &_text {
+    font-size: 1.4rem;
+
+    a {
+      &:link, &:visited {
+        text-decoration: none;
+        color: var(--clr-main);
+        transition: all .3s ease-in;
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.nav {
+  padding: 2rem 0;
+  position: relative;
+
+  &_center {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+
+  &_nav {
+    display: flex;
+    gap: 4rem;
+  }
+
+  &_links {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    list-style: none;
+  }
+  
+  &_link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: var(--clr-grey-3);
+    }
+
+    &:hover {
+      color: var(--clr-grey);
+    }
+    
+    &:global(.active) {
+      color:var(--clr-main);
+    }
+  }
+
+  @media screen and (max-width: 37.5em) {
+    &_nav {
+      flex-direction: column;
+      gap: 2rem;
+
+      &>a {
+        align-self: flex-start;
+      }
+    }
+  }
+}

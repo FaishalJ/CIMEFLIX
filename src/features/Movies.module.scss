@@ -1,0 +1,11 @@
+.movies {
+  padding: 5rem 0;
+
+  &_movies {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+}

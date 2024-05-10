@@ -1,0 +1,11 @@
+.bookmark {
+  background: var(--clr-background);
+
+  &_list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+}

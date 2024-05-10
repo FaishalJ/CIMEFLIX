@@ -1,0 +1,38 @@
+.container {
+  max-width: 100rem;
+  margin: 0 auto;
+  display: grid;
+  gap: 5rem;
+  background-color: var(--clr-background-dark);
+}
+
+.watch_related {
+  background: var(--clr-background);
+  padding: 2rem 0;
+
+  &__links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+
+    a {
+      display: block;
+      &:link, &:visited {
+        text-decoration: none;
+        color: var(--clr-grey-2);
+        text-transform: uppercase;
+        font-size: 1.8rem;
+      }
+
+      &:hover {
+        color: var(--clr-grey-t);
+      }
+      
+      &:global(.active) {
+        color:var(--clr-main);
+      }
+      
+    }
+  }
+}

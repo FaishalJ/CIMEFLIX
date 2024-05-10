@@ -1,0 +1,45 @@
+.search {
+  position: absolute;
+  z-index: 20;
+  right: 0;
+  top: 6rem;
+  width: 30rem;
+  background: var(--clr-grey-2);
+  border-radius: .5rem;
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+
+  img {
+    height: 4rem;
+    display: block;
+  }
+  
+  li {
+    padding: 1rem;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid var(--clr-grey-t);
+    }
+
+    &:hover {
+      background-color: var(--clr-grey-4)
+    }
+
+    p {
+      color: var(--clr-grey-t);
+    }
+  }
+
+  a {
+    display: flex;
+    gap: 1rem;
+
+    &:link, &:visited {
+      color: var(--clr-grey-5);
+      text-decoration: none;
+      font-size: 1.4rem;
+    }
+  }
+}

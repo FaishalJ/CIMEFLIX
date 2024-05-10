@@ -1,0 +1,33 @@
+.btn {
+  align-self: flex-start;
+  cursor: pointer;
+  background: var(--clr-main);
+  border: none;
+  padding: .5rem 1rem;
+  border-radius: .4rem;
+  font-size: 1.6rem;
+
+  &:hover {
+    background: lighten(#00acc1, 5%)
+  }
+}
+
+.abs {
+  // background: #008a9a;
+  background: var(--clr-yellow);
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  transition: all .2s;
+  padding: .4rem;
+  // color: var(--clr-yellow);
+  svg {
+    // color: #fff;
+    color: var(--clr-background-dark);
+  }
+  
+  &:hover {
+    background: darken(#ffc107, 5%);
+  }
+}

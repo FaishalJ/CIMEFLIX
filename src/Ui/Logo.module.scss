@@ -1,0 +1,22 @@
+.logo {
+  background: var(--clr-main);
+  border-radius: .5rem;
+  padding: .2rem .4rem;
+
+  &:link, &:visited {
+    text-decoration: none;
+    color: var(--clr-grey-3);
+    display: inline-block;
+  }
+  
+  p {
+    font-weight: 700;
+    font-size: 2.5rem;
+  }
+
+  @media screen and (max-width: 37.5em) {
+    p {
+      font-size: 2rem;
+    }
+  }
+}
