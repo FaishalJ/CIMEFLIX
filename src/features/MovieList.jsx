@@ -5,11 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import styles from "./MovieList.module.scss";
 import Button from "../Ui/Button";
 import { setShowSearching, setInput } from "../redux/SearchMovieSlice";
-import {
-  setBookmark,
-  setBookmarks,
-  getBookmark,
-} from "../redux/BookmarkSlice";
+import { setBookmark, setBookmarks, getBookmark } from "../redux/BookmarkSlice";
 
 export default function MovieList({ movie }) {
   const dispatch = useDispatch();
@@ -23,10 +19,7 @@ export default function MovieList({ movie }) {
     imdbID,
   };
 
-  const isBookmarked = bookmark.some(
-    (item) => item.imdbID === imdbID
-  );
-  
+  const isBookmarked = bookmark.some((item) => item.imdbID === imdbID);
 
   async function handleRequestDetails() {
     dispatch(setShowSearching(false));
@@ -36,9 +29,12 @@ export default function MovieList({ movie }) {
   function handleSetBookmark() {
     dispatch(setBookmarks(booked));
     dispatch(setBookmark(imdbID));
-    localStorage.setItem('movies', JSON.stringify(dispatch(setBookmarks(booked))));
+    localStorage.setItem(
+      "movies",
+      JSON.stringify(dispatch(setBookmarks(booked)))
+    );
   }
-
+  if (Poster === "N/A") return;
   return (
     <li className={styles.movie}>
       <Link

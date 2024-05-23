@@ -1,6 +1,6 @@
 .banner {
   max-width: 120rem;
-  height: 60vh;
+  height: 50vh;
   position: relative;
   color: var(--clr-grey-2);
   font-weight: 300;
@@ -13,7 +13,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      filter: brightness(40%);
+      filter: brightness(50%);
       border-radius: 0.5rem;
       // animation: example 10s ease-in;
     }
