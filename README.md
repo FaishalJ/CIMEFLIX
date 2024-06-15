@@ -1,10 +1,10 @@
 ## CIMEFLIX
 
-###Movie data app
+### Movie data app
 A simple movie data app where to get details about your popular movies.
 
-###Features
+### Features
 Search, delete, and bookmrak (Local storage).
 
-###API
+### API
 OMDB
